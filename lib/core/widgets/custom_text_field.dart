@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fruits_market/core/utils/app_text_styles.dart';
 
-class CustomTextField extends StatelessWidget {
-  const CustomTextField({
+class CustomTextFormField extends StatelessWidget {
+  const CustomTextFormField({
     super.key,
     required this.hintText,
     required this.keyboardType,

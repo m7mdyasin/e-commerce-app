@@ -1,28 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:fruits_market/core/utils/app_colors.dart';
 import 'package:fruits_market/core/utils/app_text_styles.dart';
-import 'package:fruits_market/features/auth/presentation/views/signup_view.dart';
+import 'package:gap/gap.dart';
 
-class DontHaveAccountWidget extends StatelessWidget {
-  const DontHaveAccountWidget({super.key});
+class HaveAccount extends StatelessWidget {
+  const HaveAccount({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, SignUpView.routeName);
+        Navigator.pop(context);
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'لا تمتلك حساب؟',
+            'تمتلك حساب بالفعل؟',
             style: AppTextStyles.baseRegular16.copyWith(
               color: Color(0xff949D9E),
             ),
           ),
+          Gap(4),
           Text(
-            ' قم بإنشاء حساب',
+            'تسجيل الدخول',
             style: AppTextStyles.baseBold16.copyWith(
               color: AppColors.primaryColor,
             ),

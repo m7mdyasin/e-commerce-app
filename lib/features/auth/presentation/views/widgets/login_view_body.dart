@@ -6,6 +6,7 @@ import 'package:fruits_market/core/widgets/custom_button.dart';
 import 'package:fruits_market/core/widgets/custom_text.dart';
 import 'package:fruits_market/core/widgets/custom_text_field.dart';
 import 'package:fruits_market/core/widgets/or_divider.dart';
+import 'package:fruits_market/features/auth/presentation/views/forget_password_view.dart';
 import 'package:fruits_market/features/auth/presentation/views/widgets/dont_have_account_widget.dart';
 import 'package:fruits_market/features/auth/presentation/views/widgets/social_button.dart';
 import 'package:gap/gap.dart';
@@ -20,14 +21,14 @@ class LoginViewBody extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            Gap(24),
-            CustomTextField(
+            const Gap(24),
+            CustomTextFormField(
               hintText: 'البريد الإلكتروني',
               keyboardType: TextInputType.emailAddress,
             ),
-            Gap(16),
+            const Gap(16),
 
-            CustomTextField(
+            CustomTextFormField(
               hintText: 'كلمة المرور',
               keyboardType: TextInputType.visiblePassword,
               icon: const Icon(Icons.visibility),
@@ -37,7 +38,9 @@ class LoginViewBody extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: CustomText(
                 text: 'نسيت كلمة المرور؟',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, ForgetPasswordView.routeName);
+                },
                 color: AppColors.lightPrimaryColor,
               ),
             ),
