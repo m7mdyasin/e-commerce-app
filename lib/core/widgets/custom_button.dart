@@ -16,7 +16,7 @@ class CustomButton extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Text(
             text,
-            style: AppTextStyles.baseRegular16.copyWith(color: Colors.white),
+            style: AppTextStyles.baseBold16.copyWith(color: Colors.white),
           ),
         ),
         style: TextButton.styleFrom(

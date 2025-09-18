@@ -1,7 +1,10 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:fruits_market/constans.dart';
+import 'package:fruits_market/core/services/shared_prefrences_singleton.dart';
 import 'package:fruits_market/core/utils/app_colors.dart';
 import 'package:fruits_market/core/widgets/custom_button.dart';
+import 'package:fruits_market/features/auth/presentation/views/login_view.dart';
 import 'package:fruits_market/features/on_boarding/presentation/view/widgets/on_boarding_page_view.dart';
 import 'package:gap/gap.dart';
 
@@ -62,7 +65,13 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
             maintainSize: true,
             maintainState: true,
             visible: currentPage == 1 ? true : false,
-            child: CustomButton(text: 'ابدأ الان', onPressed: () {}),
+            child: CustomButton(
+              text: 'ابدأ الان',
+              onPressed: () {
+                Prefs.setBool(kisOnBoardingViewSeen, true);
+                Navigator.of(context).pushReplacementNamed(LoginView.routeName);
+              },
+            ),
           ),
         ),
         Gap(43),
