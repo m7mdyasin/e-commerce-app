@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">fruits_market</string>
+
+ 
+    <string name="facebook_app_id">1508154963838140</string>
+    <string name="facebook_client_token">6d682f884e4f9d8efb25ecde7c943363</string>
+</resources>
