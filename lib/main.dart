@@ -6,7 +6,6 @@ import 'package:fruits_market/core/helper_functions/on_generate_routes.dart';
 import 'package:fruits_market/core/services/bloc_observer.dart';
 import 'package:fruits_market/core/services/getit_service.dart';
 import 'package:fruits_market/core/services/shared_prefrences_singleton.dart';
-import 'package:fruits_market/core/utils/app_colors.dart';
 import 'package:fruits_market/features/splash/presentation/views/splash_view.dart';
 import 'package:fruits_market/firebase_options.dart';
 import 'package:fruits_market/generated/l10n.dart';
