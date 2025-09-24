@@ -94,7 +94,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 text: 'تسجيل بواسطة أبل',
                 assetPath: Assets.imagesApple,
                 onTap: () {
-                  context.read<SignInCubit>().signInWithApple();
+                  // context.read<SignInCubit>().signInWithApple();
                 },
               ),
               const Gap(16),
@@ -103,7 +103,7 @@ class _SigninViewBodyState extends State<SigninViewBody> {
                 text: 'تسجيل بواسطة فيسبوك',
                 assetPath: Assets.imagesFacebook,
                 onTap: () {
-                  context.read<SignInCubit>().signInWithFacebook();
+                  // context.read<SignInCubit>().signInWithFacebook();
                 },
               ),
             ],

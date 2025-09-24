@@ -29,7 +29,9 @@ class FruitsApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Cairo',
         scaffoldBackgroundColor: Colors.white,
-        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 128, 223, 168),
+        ),
       ),
       localizationsDelegates: const [
         S.delegate,

@@ -4,6 +4,7 @@ import 'package:fruits_market/core/helper_functions/builderror_bar.dart';
 import 'package:fruits_market/features/auth/presentation/cubits/signin_cubit/sign_in_cubit.dart';
 import 'package:fruits_market/core/widgets/custom_progress_h_u_d.dart';
 import 'package:fruits_market/features/auth/presentation/views/widgets/signin_view_body.dart';
+import 'package:fruits_market/features/home/presentation/views/home_view.dart';
 
 class SigninViewBodyBlocConsumer extends StatelessWidget {
   const SigninViewBodyBlocConsumer({super.key});
@@ -12,7 +13,13 @@ class SigninViewBodyBlocConsumer extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<SignInCubit, SignInState>(
       listener: (context, state) {
-        if (state is SignInSucsses) {}
+        if (state is SignInSucsses) {
+          Navigator.pushNamedAndRemoveUntil(
+            context,
+            HomeView.routeName,
+            (route) => false,
+          );
+        }
         if (state is SignInFailure) {
           buildErrorBar(context, state.errMessage);
         }
