@@ -10,6 +10,10 @@ class Assets {
   /// assets/images/apple.svg
   static const String imagesApple = "assets/images/apple.svg";
 
+  /// Assets for imagesArc
+  /// assets/images/arc.svg
+  static const String imagesArc = "assets/images/arc.svg";
+
   /// Assets for imagesCheck
   /// assets/images/check.svg
   static const String imagesCheck = "assets/images/check.svg";
@@ -21,6 +25,42 @@ class Assets {
   /// Assets for imagesGoogle
   /// assets/images/google.svg
   static const String imagesGoogle = "assets/images/google.svg";
+
+  /// Assets for imagesHomeBarIconActiveElementActive
+  /// assets/images/home_bar_icon_active/element_active.svg
+  static const String imagesHomeBarIconActiveElementActive = "assets/images/home_bar_icon_active/element_active.svg";
+
+  /// Assets for imagesHomeBarIconActiveHomeActive
+  /// assets/images/home_bar_icon_active/home_active.svg
+  static const String imagesHomeBarIconActiveHomeActive = "assets/images/home_bar_icon_active/home_active.svg";
+
+  /// Assets for imagesHomeBarIconActiveShoppingCartActive
+  /// assets/images/home_bar_icon_active/shopping-cart_active.svg
+  static const String imagesHomeBarIconActiveShoppingCartActive = "assets/images/home_bar_icon_active/shopping-cart_active.svg";
+
+  /// Assets for imagesHomeBarIconActiveUserActive
+  /// assets/images/home_bar_icon_active/user_active.svg
+  static const String imagesHomeBarIconActiveUserActive = "assets/images/home_bar_icon_active/user_active.svg";
+
+  /// Assets for imagesHomeBarIconInactiveElementInactive
+  /// assets/images/home_bar_icon_inactive/element_inactive.svg
+  static const String imagesHomeBarIconInactiveElementInactive = "assets/images/home_bar_icon_inactive/element_inactive.svg";
+
+  /// Assets for imagesHomeBarIconInactiveHomeInactive
+  /// assets/images/home_bar_icon_inactive/home_inactive.svg
+  static const String imagesHomeBarIconInactiveHomeInactive = "assets/images/home_bar_icon_inactive/home_inactive.svg";
+
+  /// Assets for imagesHomeBarIconInactiveShoppingCartInactive
+  /// assets/images/home_bar_icon_inactive/shopping-cart_inactive.svg
+  static const String imagesHomeBarIconInactiveShoppingCartInactive = "assets/images/home_bar_icon_inactive/shopping-cart_inactive.svg";
+
+  /// Assets for imagesHomeBarIconInactiveUserInactive
+  /// assets/images/home_bar_icon_inactive/user_inactive.svg
+  static const String imagesHomeBarIconInactiveUserInactive = "assets/images/home_bar_icon_inactive/user_inactive.svg";
+
+  /// Assets for imagesImageCoverTest
+  /// assets/images/image_cover_test.jpg
+  static const String imagesImageCoverTest = "assets/images/image_cover_test.jpg";
 
   /// Assets for imagesLogo
   /// assets/images/logo.png
@@ -61,6 +101,10 @@ class Assets {
   /// Assets for imagesPlant
   /// assets/images/plant.svg
   static const String imagesPlant = "assets/images/plant.svg";
+
+  /// Assets for imagesProductTest
+  /// assets/images/product_test.png
+  static const String imagesProductTest = "assets/images/product_test.png";
 
   /// Assets for imagesProfileImage
   /// assets/images/profile_image.png

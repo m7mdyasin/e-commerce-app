@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruits_market/features/home/presentation/views/widgets/custom_button_home_bar.dart';
 import 'package:fruits_market/features/home/presentation/views/widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
@@ -6,6 +7,9 @@ class HomeView extends StatelessWidget {
   static const routeName = 'home_view';
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: SafeArea(child: HomeViewBody()));
+    return const Scaffold(
+      bottomNavigationBar: CustomButtonHomeBar(),
+      body: SafeArea(child: HomeViewBody()),
+    );
   }
 }
